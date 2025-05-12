@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toplam</title>
+</head>
+<body>
+    <input id="sayi" type="number" placeholder="Sayı girin">
+    <button onclick="topla()">Hesapla</button>
+
+    <script>
+        function topla() {
+            let a = parseInt(document.getElementById("sayi").value);
+            let toplam = 0;
+            for (let i = a; i >= 11; i--) {
+                if (i % 2 === 1) toplam += i;
+            }
+            alert(toplam);
+        }
+    </script>
+</body>
+</html
